@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="english" scope="singleton" lazy-init="false" class="training.service.HelloServiceBean">
+	</bean>
+	
+	<bean id="shs" name="shs,spn,spanish" class="training.service.SpanishHelloService"></bean>
+	
+	<bean name="kannada" class="training.service.KannadaHelloService"></bean>
+	
+</beans>
